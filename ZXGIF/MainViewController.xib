@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="ActivityIndicator" destination="uIC-5t-hzV" id="2Y0-2b-rz6"/>
+                <outlet property="GIFImageView" destination="2Al-oX-Rss" id="OQQ-yS-7cb"/>
+                <outlet property="arrowImageView" destination="pnq-8D-9gQ" id="5XC-gc-N3s"/>
+                <outlet property="backgroundView" destination="pvd-dF-M4W" id="h2T-zY-kZs"/>
+                <outlet property="tipTextField" destination="55o-d4-CQN" id="qp7-pE-zjf"/>
+                <outlet property="videoImageView" destination="SdP-tB-wNe" id="aSe-eF-5dm"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pvd-dF-M4W" customClass="ZXDragView">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55o-d4-CQN">
+                            <rect key="frame" x="0.0" y="97" width="400" height="26"/>
+                            <animations/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Drag your video here" id="MVY-x7-GM5">
+                                <font key="font" metaFont="systemLight" size="15"/>
+                                <color key="textColor" red="0.45882352941176469" green="0.0" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pnq-8D-9gQ">
+                            <rect key="frame" x="187" y="172" width="25" height="25"/>
+                            <animations/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="arrow" id="mbK-QB-nmz"/>
+                        </imageView>
+                        <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Al-oX-Rss">
+                            <rect key="frame" x="290" y="154" width="60" height="60"/>
+                            <animations/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="gif" id="dPP-Im-RaA"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SdP-tB-wNe">
+                            <rect key="frame" x="170" y="154" width="60" height="60"/>
+                            <animations/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="video" id="y6x-Sk-ZbQ"/>
+                        </imageView>
+                        <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="uIC-5t-hzV">
+                            <rect key="frame" x="184" y="39" width="32" height="32"/>
+                            <animations/>
+                        </progressIndicator>
+                    </subviews>
+                    <animations/>
+                </customView>
+            </subviews>
+            <animations/>
+            <point key="canvasLocation" x="400" y="318"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="arrow" width="64" height="64"/>
+        <image name="gif" width="837.81817626953125" height="837.81817626953125"/>
+        <image name="video" width="837.81817626953125" height="837.81817626953125"/>
+    </resources>
+</document>
